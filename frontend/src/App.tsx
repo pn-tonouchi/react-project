@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Counter from './Counter';
 import CounterWithReducer from './CounterWithReducer';
+import {FruitsList, FruitsData} from './Fruits';
 
 // 関数引数は interfaceで定義することが多い
 interface AppProps {
@@ -23,6 +24,13 @@ function App(props: AppProps) {
         <div>{func(props)}</div>
         <Counter />
         <CounterWithReducer/>
+
+        <div>
+          <h1>Fruits List</h1>
+          <h1>Fruits</h1>
+          <FruitsData id={3}/>
+        </div>
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
